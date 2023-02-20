@@ -1,0 +1,36 @@
+on: [push]
+
+jobs:
+  BTC-Test-Suite-Pipeline:
+    runs-on: self-hosted
+    services:
+      BTC:
+        # we build this image ourselves to bundle in matlab and the matlab 
+license.
+        #image: ndrasov/ep_et_matlab
+        image: btces/ep:22.3p0
+        credentials:
+          username: ndrasov
+          password: ${{ secrets.DOCKER_PASSWORD }}
+        ports:
+           - 29268:8080
+        env:
+          LICENSE_LOCATION: 27000@srvbtces01.btc-es.local # EP license 
+server
+        volumes:
+          - ${{ github.workspace}}:/mnt
+        options: --mac-address="02:42:4e:0b:54:d9" # spoof mac addr to 
+match with matlab license
+    name: GitHub Actions Workflow with BTC EmbeddedPlatform
+    steps:
+      - id: checkout_init # init repo so BTC action can access 
+pipeline.yml
+        name: checkout_init
+        uses: actions/checkout@v3
+
+      - id: C_Pipeline
+        name: C_Pipeline
+        uses: btc-nathand/btc-actions@master
+        with:
+          BTCPipePath: "C_pipeline.yml"
+          ContinueOnFail: true

@@ -1,0 +1,10 @@
+startup:
+  port: 29268
+profileCreateC:
+  profilePath: "c_prof.epp"
+  codeModelPath: "tst/CodeArchitecture.xml"
+vectorGeneration:
+vectorExport:
+  dir: "/"
+  vectorKind: "SV"
+  vectorFormat: "CSV"
