@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeModel>
 	<Files>
-		<File relPath="src" name="Lib.c" annotate="no" kind="source" id="ID60"/>
-		<File relPath="src" name="Unit.c" annotate="yes" kind="source" id="ID63"/>
-		<File relPath="src" name="StubCode.c" annotate="no" kind="source" id="ID711"/>
-		<File relPath="src" name="InitPointers.c" annotate="no" kind="library" id="ID1405" pointerInitCode="yes"/>
+		<File relPath="../src" name="Lib.c" annotate="no" kind="source" id="ID60"/>
+		<File relPath="../src" name="Unit.c" annotate="yes" kind="source" id="ID63"/>
+		<File relPath="." name="StubCode.c" annotate="no" kind="source" id="ID711"/>
+		<File relPath="." name="InitPointers.c" annotate="no" kind="library" id="ID1405" pointerInitCode="yes"/>
 	</Files>
 	<Functions>
 		<Function name="unit" sampleTime="1.0" fileref="ID63" pointerInitFunc="btc_init_pointer_unit">
