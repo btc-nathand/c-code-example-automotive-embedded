@@ -30,3 +30,7 @@ jobs:
         with:
           BTCPipePath: "C_pipeline.yml"
           ContinueOnFail: true
+
+      - id: checkout_cleanup # push back relics we create to repo
+        name: checkout_cleanup
+        uses: stefanzweifel/git-auto-commit-action@v4
