@@ -6,5 +6,5 @@ vectorImport:
   importDir: "vectors/"
 backToBackTest:
   reference: "SIL"
-  comparison: "SIL"
+  comparison: "SIL" 
 codeAnalysisReport:
