@@ -3,7 +3,9 @@ startup:
 profileCreateC:
   codeModelPath: "tst/CodeArchitecture.xml"
 vectorImport:
-  importDir: "vectors/"
+  importDir: "vectors"
+  vectorFormat: "EXCEL"
+  vectorKind: "SV"
 backToBackTest:
   reference: "SIL"
   comparison: "SIL" 
