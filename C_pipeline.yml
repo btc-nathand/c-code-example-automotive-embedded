@@ -2,7 +2,7 @@ startup:
   port: 29268
 profileLoad:
   profilePath: "tst/TestProject.epp"
-vectorExport:
-  dir: "/"
-  vectorKind: "SV"
-  vectorFormat: "CSV"
+backToBack:
+  reference: "SIL"
+  comparison: "SIL"
+codeAnalysisReport:
