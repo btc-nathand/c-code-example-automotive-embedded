@@ -1,7 +1,9 @@
 startup:
   port: 29268
-profileLoad:
-  profilePath: "tst/TestProject.epp"
+profileCreateC:
+  codeModelPath: "tst/CodeArchitecture.xml"
+vectorImport:
+  importDir: "vectors/"
 backToBackTest:
   reference: "SIL"
   comparison: "SIL"
