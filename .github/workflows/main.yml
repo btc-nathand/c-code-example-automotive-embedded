@@ -20,7 +20,7 @@ jobs:
         options: --mac-address="02:42:4e:0b:54:d9" # spoof mac addr to match with matlab license
     name: GitHub Actions Workflow with BTC EmbeddedPlatform
     steps:
-      - id: checkout_init # init repo so BTC action can access pipeline.yml
+      - id: checkout_init # init repo so BTC action can access pipeline.yml 
         name: checkout_init
         uses: actions/checkout@v3
 
