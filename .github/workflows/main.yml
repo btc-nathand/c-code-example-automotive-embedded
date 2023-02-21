@@ -10,7 +10,7 @@ jobs:
         image: btces/ep:22.3p0
         credentials:
           username: ndrasov
-          password: ${{ secrets.DOCKER_PASSWORD }} 
+          password: ${{ secrets.DOCKER_PASSWORD }}
         ports:
            - 29268:8080
         env:
