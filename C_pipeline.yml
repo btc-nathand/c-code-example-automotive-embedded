@@ -7,4 +7,4 @@ vectorImport:
 backToBackTest:
   reference: "SIL"
   comparison: "SIL" 
-codeAnalysisReport: 
+codeAnalysisReport:
